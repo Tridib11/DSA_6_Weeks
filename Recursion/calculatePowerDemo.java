@@ -8,6 +8,7 @@ public class calculatePowerDemo {
         long endTime=System.nanoTime();
         System.out.println((endTime-startTime)/1_000_000.0 +" sec");
 
+        //2nd Function
 
         long startTime2=System.nanoTime();
         System.out.println(calculatePowerDemo2(2, 10));
