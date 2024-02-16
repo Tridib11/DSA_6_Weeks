@@ -24,7 +24,7 @@ public class calculatePowerDemo {
     }
 
 
-    //time - O(log n) , Space - O(n/2) 
+    //time - O(log n) , Space - O(nlog n) 
     public static int calculatePowerDemo2(int x,int n){
         if(n==0) return 1;
         if(n%2==0){
