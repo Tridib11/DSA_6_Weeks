@@ -17,11 +17,14 @@ public class calculatePowerDemo {
 
     }
 
+    //O(n)
     public static int calculatePowerDemo1(int x, int n) {
         if (n == 0) return 1;
         return x * calculatePowerDemo1(x, n - 1);
     }
 
+
+    //O(log n)
     public static int calculatePowerDemo2(int x,int n){
         if(n==0) return 1;
         if(n%2==0){
