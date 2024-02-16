@@ -4,7 +4,7 @@ public class calculatePowerDemo {
         //1st Function
 
         long startTime=System.nanoTime();
-        System.out.println(calculatePowerDemo1(2, 10));
+        System.out.println(calculatePowerDemo1(2, 1000));
         long endTime=System.nanoTime();
         System.out.println((endTime-startTime)/1_000_000.0 +" sec");
 
@@ -17,14 +17,14 @@ public class calculatePowerDemo {
 
     }
 
-    //O(n)
+    //time - O(n) , Space - O(n)   
     public static int calculatePowerDemo1(int x, int n) {
         if (n == 0) return 1;
         return x * calculatePowerDemo1(x, n - 1);
     }
 
 
-    //O(log n)
+    //time - O(log n) , Space - O(n/2) 
     public static int calculatePowerDemo2(int x,int n){
         if(n==0) return 1;
         if(n%2==0){
