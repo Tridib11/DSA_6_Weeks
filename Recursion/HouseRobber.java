@@ -21,7 +21,7 @@ class HouseRobber {
 
 class Solution1 {
     public int helper(int[] nums, int ind) {
-        if(ind < 0) return 0;
+        if(ind < 0) return 0; //not = to 0 because 0 is a valid condition
         int inc = nums[ind] + helper(nums, ind-2);
         int exc = helper(nums, ind-1);
         return Math.max(inc, exc);
