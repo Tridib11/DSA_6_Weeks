@@ -9,7 +9,6 @@ class Solution {
         if (ind <= 0)
             return 1;
 
-        int n = s.length();
         int res = 0;
 
         // single digits as a character => Because 0 is not a valid single character
