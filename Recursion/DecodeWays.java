@@ -3,7 +3,7 @@
 public class DecodeWays {
 
 }
-
+//-n to 0
 class Solution {
     public int helper(String s, int ind) {
         if (ind <= 0)
