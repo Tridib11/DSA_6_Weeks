@@ -1,5 +1,10 @@
 import java.util.*;
 
+
+/*
+ time - (n*n!)
+ space - n - recursive stack space
+ */
 public class nQueen {
     
 }
