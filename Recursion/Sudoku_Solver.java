@@ -1,5 +1,9 @@
 public class Sudoku_Solver {
-
+    /*
+     * No of empty spaces to be filled in the board = E
+     * time - 9 * (9 power E) -> 9^E
+     * space -> O(E)
+     */
 }
 
 class Solution {
