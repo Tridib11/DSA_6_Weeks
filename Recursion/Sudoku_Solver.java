@@ -1,27 +1,35 @@
 public class Sudoku_Solver {
-    
+
 }
 
 class Solution {
     public void solveSudoku(char[][] board) {
         helper(board);
     }
-    public boolean helper(char[][] board){
-        for(int i=0;i<9;i++){
-            for(int j=0;j<9;j++){
-                if(board[i][j]=='.'){
-                    for(char c='1';c<='9';c++){
-                        if(isValid(i,j,board,c)){
-                            board[i][j]=c;
-                            if(helper(board)) return true;;
-                            board[i][j]='.';
+
+    public boolean helper(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] == '.') {
+                    for (char c = '1'; c <= '9'; c++) {
+                        if (isValid(i, j, board, c)) {
+                            board[i][j] = c;
+                            /*
+                             * if solution found return true
+                             * no need to backtrack
+                             */
+                            if (helper(board))
+                                return true;
+                            board[i][j] = '.';
                         }
                     }
-                     return false;
+                    // can't place any of the 9 digits at i,j
+                    return false;
                 }
-               
+
             }
         }
+        // gone through all the places
         return true;
     }
 
