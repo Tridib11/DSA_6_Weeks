@@ -30,7 +30,6 @@ class Solution {
                     // can't place any of the 9 digits at i,j
                     return false;
                 }
-
             }
         }
         // gone through all the places
